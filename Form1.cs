@@ -319,8 +319,8 @@ namespace Grundkurs2
                 btnlogin.Text = "se connecter";
             }
         }
-        public void 
-            ,()
+        public void Vorherigeeingaben()
+            
         {
             if (Properties.Settings.Default.Language == "Deutsch")
             {
