@@ -1,0 +1,12 @@
+C:\Users\Windows10Pro\Source\Repos\Finni08\Finnis-Ratespiel\bin\Debug\Grundkurs2.exe.config
+C:\Users\Windows10Pro\Source\Repos\Finni08\Finnis-Ratespiel\bin\Debug\Grundkurs2.exe
+C:\Users\Windows10Pro\Source\Repos\Finni08\Finnis-Ratespiel\bin\Debug\Grundkurs2.pdb
+C:\Users\Windows10Pro\Source\Repos\Finni08\Finnis-Ratespiel\obj\Debug\Grundkurs2.csproj.AssemblyReference.cache
+C:\Users\Windows10Pro\Source\Repos\Finni08\Finnis-Ratespiel\obj\Debug\Grundkurs2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Windows10Pro\Source\Repos\Finni08\Finnis-Ratespiel\obj\Debug\Grundkurs2.Form1.resources
+C:\Users\Windows10Pro\Source\Repos\Finni08\Finnis-Ratespiel\obj\Debug\Grundkurs2.Properties.Resources.resources
+C:\Users\Windows10Pro\Source\Repos\Finni08\Finnis-Ratespiel\obj\Debug\Grundkurs2.Einstellungen.resources
+C:\Users\Windows10Pro\Source\Repos\Finni08\Finnis-Ratespiel\obj\Debug\Grundkurs2.csproj.GenerateResource.cache
+C:\Users\Windows10Pro\Source\Repos\Finni08\Finnis-Ratespiel\obj\Debug\Grundkurs2.csproj.CoreCompileInputs.cache
+C:\Users\Windows10Pro\Source\Repos\Finni08\Finnis-Ratespiel\obj\Debug\Grundkurs2.exe
+C:\Users\Windows10Pro\Source\Repos\Finni08\Finnis-Ratespiel\obj\Debug\Grundkurs2.pdb

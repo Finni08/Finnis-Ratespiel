@@ -123,6 +123,7 @@
             this.rtbEingaben.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.rtbEingaben.Location = new System.Drawing.Point(444, 119);
             this.rtbEingaben.Name = "rtbEingaben";
+            this.rtbEingaben.ReadOnly = true;
             this.rtbEingaben.Size = new System.Drawing.Size(135, 170);
             this.rtbEingaben.TabIndex = 15;
             this.rtbEingaben.Text = "Vorherige Eingaben";
