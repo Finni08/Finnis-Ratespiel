@@ -116,6 +116,7 @@
             this.btnHelp.TabIndex = 14;
             this.btnHelp.Text = "Hilfe";
             this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click_1);
             // 
             // rtbEingaben
             // 

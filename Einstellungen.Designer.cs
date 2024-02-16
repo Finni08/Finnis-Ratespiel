@@ -125,11 +125,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnKindergarten;
-        private System.Windows.Forms.Button btnEasy;
-        private System.Windows.Forms.Button btnMiddle;
-        private System.Windows.Forms.Button btnHard;
-        private System.Windows.Forms.Button btnReallyHard;
-        private System.Windows.Forms.ComboBox cbxLanguage;
+        public System.Windows.Forms.Button btnKindergarten;
+        public System.Windows.Forms.Button btnEasy;
+        public System.Windows.Forms.Button btnMiddle;
+        public System.Windows.Forms.Button btnHard;
+        public System.Windows.Forms.Button btnReallyHard;
+        public System.Windows.Forms.ComboBox cbxLanguage;
     }
 }

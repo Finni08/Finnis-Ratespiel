@@ -13,16 +13,21 @@ namespace Grundkurs2
 {
     public partial class Form1 : Form
     {
+        Einstellungen einstellungen;
+        Help help;
         public Random random = new Random();
         public int Zahl = 0;
         public int Obergrenze = 10;
         public int Wins = 0;
         public int loses = 0;
-        public Boolean Gewonnen = false;
+        public bool Gewonnen = false;
 
         public Form1()
         {
             InitializeComponent();
+
+            help = new Help(this);
+            einstellungen = new Einstellungen(this);
 
             ZahlFestlegen();
             lblErgebnis.Hide();
@@ -31,6 +36,13 @@ namespace Grundkurs2
             Vorherigeeingaben();
             header();
             Resetbtn2();
+            Helplanguage();
+            Settingslanguage();
+            Kindergartenbtn();
+            Easybtn();
+            Middlebtn();
+            Hardbtn();
+            ReallyHardbtn();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -69,14 +81,12 @@ namespace Grundkurs2
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
-            Einstellungen einstellungen = new Einstellungen(this);
             einstellungen.Show();
         }
-        private void btnHelp_Click(object sender, EventArgs e)
-        {
-
+        private void btnHelp_Click_1(object sender, EventArgs e)
+        {          
+            help.Show();
         }
-
         public void ZahlFestlegen()
         {
             if (Properties.Settings.Default.Difficulty == "Kindergarten: 1-10")
@@ -87,7 +97,7 @@ namespace Grundkurs2
             {
                 Obergrenze = 100;
             }
-            else if (Properties.Settings.Default.Difficulty == "Middel: 1-1000")
+            else if (Properties.Settings.Default.Difficulty == "Medium: 1-1000")
             {
                 Obergrenze = 1000;
             }
@@ -117,7 +127,7 @@ namespace Grundkurs2
                 loses = 0;
             }
             else if (Properties.Settings.Default.Language == "English")
-            {
+            { 
                 lblVersuche.Text = "tries 0";
                 loses = 0;
             }
@@ -258,7 +268,7 @@ namespace Grundkurs2
                     lblheader.Text = "Devinez un nombre compris entre 1 et 100";
                 }
             }
-            else if (Properties.Settings.Default.Difficulty == "Middel: 1-1000")
+            else if (Properties.Settings.Default.Difficulty == "Medium: 1-1000")
             {
                 if (Properties.Settings.Default.Language == "Deutsch")
                 {
@@ -339,6 +349,111 @@ namespace Grundkurs2
         {
             Wins = 0;
             lblWins.Text = "Wins 0";
+        }
+        public void Helplanguage()
+        {
+            if (Properties.Settings.Default.Language == "Deutsch")
+            {
+                btnHelp.Text = "Hilfe";
+            }
+            else if (Properties.Settings.Default.Language == "English")
+            {
+                btnHelp.Text = "Help";
+            }
+            else if (Properties.Settings.Default.Language == "français")
+            {
+                btnHelp.Text = "Aide";
+            }
+        }
+        public void Settingslanguage()
+        {
+            if (Properties.Settings.Default.Language == "Deutsch")
+            {
+                btnSettings.Text = "Einstellungen";
+            }
+            else if (Properties.Settings.Default.Language == "English")
+            {
+                btnSettings.Text = "Settings";
+            }
+            else if (Properties.Settings.Default.Language == "français")
+            {
+                btnSettings.Text = "paramètres";
+            }
+        }
+        public void Kindergartenbtn()
+        {
+            if (Properties.Settings.Default.Language == "Deutsch")
+            {
+                einstellungen.btnKindergarten.Text = "Kindergarten: 1-10";
+            }
+            else if (Properties.Settings.Default.Language == "English")
+            {
+                einstellungen.btnKindergarten.Text = "kindergarten: 1-10";
+            }
+            else if (Properties.Settings.Default.Language == "français")
+            {
+                einstellungen.btnKindergarten.Text = "Jardin d'enfants: 1-10";
+            }
+        }
+        public void Easybtn()
+        {
+            if (Properties.Settings.Default.Language == "Deutsch")
+            {
+                einstellungen.btnEasy.Text = "Einfach: 1-100";
+            }
+            else if (Properties.Settings.Default.Language == "English")
+            {
+                einstellungen.btnEasy.Text = "Easy: 1-100";
+            }
+            else if (Properties.Settings.Default.Language == "français")
+            {
+                einstellungen.btnEasy.Text = "Simplement: 1-100";
+            }
+        }
+        public void Middlebtn()
+        {
+            if (Properties.Settings.Default.Language == "Deutsch")
+            {
+                einstellungen.btnMiddle.Text = "Mittel: 1-1000";
+            }
+            else if (Properties.Settings.Default.Language == "English")
+            {
+                einstellungen.btnMiddle.Text = "Medium: 1-1000";
+            }
+            else if (Properties.Settings.Default.Language == "français")
+            {
+                einstellungen.btnMiddle.Text = "Milieu: 1-1000";
+            }
+        }
+        public void Hardbtn()
+        {
+            if (Properties.Settings.Default.Language == "Deutsch")
+            {
+                einstellungen.btnHard.Text = "Schwer: 1-10000";
+            }
+            else if (Properties.Settings.Default.Language == "English")
+            {
+                einstellungen.btnHard.Text = "Hard: 1-10000";
+            }
+            else if (Properties.Settings.Default.Language == "français")
+            {
+                einstellungen.btnHard.Text = "Difficile: 1-10000";
+            }
+        }
+        public void ReallyHardbtn()
+        {
+            if (Properties.Settings.Default.Language == "Deutsch")
+            {
+                einstellungen.btnReallyHard.Text = "Sehr Schwer: 1-100000";
+            }
+            else if (Properties.Settings.Default.Language == "English")
+            {
+                einstellungen.btnReallyHard.Text = "Really Hard: 1-100000";
+            }
+            else if (Properties.Settings.Default.Language == "français")
+            {
+                einstellungen.btnReallyHard.Text = "Très difficile: 1-100000";
+            }
         }
     }
 }

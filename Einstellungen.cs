@@ -41,7 +41,7 @@ namespace Grundkurs2
 
         private void btnMiddle_Click(object sender, EventArgs e)
         {
-            Properties.Settings.Default.Difficulty = "Middel: 1-1000";
+            Properties.Settings.Default.Difficulty = "Medium: 1-1000";
             f1.Obergrenze = 1000;
             f1.ZahlFestlegen();
             f1.header();
@@ -71,38 +71,28 @@ namespace Grundkurs2
             if (cbxLanguage.Text == "Deutsch")
             {
                 Properties.Settings.Default.Language = "Deutsch";
-                f1.header();
-                f1.VersucheReset();
-                f1.Winsreset();
-                f1.Vorherigeeingaben();
-                f1.btnSettings.Text = "Einstellungen";
-                f1.Resetbtn2();
-                f1.btnHelp.Text = "Hilfe";
             }
             else if (cbxLanguage.Text == "English")
             {
                 Properties.Settings.Default.Language = "English";
-                f1.header();
-                f1.VersucheReset();
-                f1.Winsreset();
-                f1.Vorherigeeingaben();
-                f1.btnSettings.Text = "Settings";
-                f1.Resetbtn2();
-                f1.btnHelp.Text = "Help";
             }
             else
             {
                 Properties.Settings.Default.Language = "français";
-                f1.header();
-                f1.VersucheReset();
-                f1.Winsreset();
-                f1.Vorherigeeingaben();
-                f1.btnSettings.Text = "paramètres";
-                f1.Resetbtn2();
-                f1.btnHelp.Text = "Aide";
             }
-            Properties.Settings.Default.Save();
             f1.header();
+            f1.VersucheReset();
+            f1.Winsreset();
+            f1.Vorherigeeingaben();
+            f1.Settingslanguage();
+            f1.Resetbtn2();
+            f1.Helplanguage();
+            f1.Kindergartenbtn();
+            f1.Easybtn();
+            f1.Middlebtn();
+            f1.Hardbtn();
+            f1.ReallyHardbtn();
+            Properties.Settings.Default.Save();
         }
     }
 }

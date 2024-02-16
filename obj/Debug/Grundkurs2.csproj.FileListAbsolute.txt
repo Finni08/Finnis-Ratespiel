@@ -10,3 +10,4 @@ C:\Users\Windows10Pro\Source\Repos\Finni08\Finnis-Ratespiel\obj\Debug\Grundkurs2
 C:\Users\Windows10Pro\Source\Repos\Finni08\Finnis-Ratespiel\obj\Debug\Grundkurs2.csproj.CoreCompileInputs.cache
 C:\Users\Windows10Pro\Source\Repos\Finni08\Finnis-Ratespiel\obj\Debug\Grundkurs2.exe
 C:\Users\Windows10Pro\Source\Repos\Finni08\Finnis-Ratespiel\obj\Debug\Grundkurs2.pdb
+C:\Users\Windows10Pro\Source\Repos\Finni08\Finnis-Ratespiel\obj\Debug\Grundkurs2.Help.resources
