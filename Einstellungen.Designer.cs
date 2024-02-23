@@ -118,6 +118,7 @@
             this.Controls.Add(this.btnEasy);
             this.Controls.Add(this.btnKindergarten);
             this.Name = "Einstellungen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Einstellungen";
             this.ResumeLayout(false);
 

@@ -38,11 +38,6 @@ namespace Grundkurs2
             Resetbtn2();
             Helplanguage();
             Settingslanguage();
-            Kindergartenbtn();
-            Easybtn();
-            Middlebtn();
-            Hardbtn();
-            ReallyHardbtn();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -81,11 +76,28 @@ namespace Grundkurs2
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
-            einstellungen.Show();
+            if (einstellungen != null && !einstellungen.IsDisposed)
+            {
+                einstellungen.Show();
+            }
+            else
+            {
+
+                einstellungen = new Einstellungen(this);
+                einstellungen.Show();
+            }
         }
         private void btnHelp_Click_1(object sender, EventArgs e)
         {          
-            help.Show();
+            if(help != null && !help.IsDisposed)
+            {
+                help.Show();
+            }
+            else
+            {
+                help = new Help(this);
+                help.Show();
+            }
         }
         public void ZahlFestlegen()
         {
@@ -380,80 +392,6 @@ namespace Grundkurs2
                 btnSettings.Text = "paramètres";
             }
         }
-        public void Kindergartenbtn()
-        {
-            if (Properties.Settings.Default.Language == "Deutsch")
-            {
-                einstellungen.btnKindergarten.Text = "Kindergarten: 1-10";
-            }
-            else if (Properties.Settings.Default.Language == "English")
-            {
-                einstellungen.btnKindergarten.Text = "kindergarten: 1-10";
-            }
-            else if (Properties.Settings.Default.Language == "français")
-            {
-                einstellungen.btnKindergarten.Text = "Jardin d'enfants: 1-10";
-            }
-        }
-        public void Easybtn()
-        {
-            if (Properties.Settings.Default.Language == "Deutsch")
-            {
-                einstellungen.btnEasy.Text = "Einfach: 1-100";
-            }
-            else if (Properties.Settings.Default.Language == "English")
-            {
-                einstellungen.btnEasy.Text = "Easy: 1-100";
-            }
-            else if (Properties.Settings.Default.Language == "français")
-            {
-                einstellungen.btnEasy.Text = "Simplement: 1-100";
-            }
-        }
-        public void Middlebtn()
-        {
-            if (Properties.Settings.Default.Language == "Deutsch")
-            {
-                einstellungen.btnMiddle.Text = "Mittel: 1-1000";
-            }
-            else if (Properties.Settings.Default.Language == "English")
-            {
-                einstellungen.btnMiddle.Text = "Medium: 1-1000";
-            }
-            else if (Properties.Settings.Default.Language == "français")
-            {
-                einstellungen.btnMiddle.Text = "Milieu: 1-1000";
-            }
-        }
-        public void Hardbtn()
-        {
-            if (Properties.Settings.Default.Language == "Deutsch")
-            {
-                einstellungen.btnHard.Text = "Schwer: 1-10000";
-            }
-            else if (Properties.Settings.Default.Language == "English")
-            {
-                einstellungen.btnHard.Text = "Hard: 1-10000";
-            }
-            else if (Properties.Settings.Default.Language == "français")
-            {
-                einstellungen.btnHard.Text = "Difficile: 1-10000";
-            }
-        }
-        public void ReallyHardbtn()
-        {
-            if (Properties.Settings.Default.Language == "Deutsch")
-            {
-                einstellungen.btnReallyHard.Text = "Sehr Schwer: 1-100000";
-            }
-            else if (Properties.Settings.Default.Language == "English")
-            {
-                einstellungen.btnReallyHard.Text = "Really Hard: 1-100000";
-            }
-            else if (Properties.Settings.Default.Language == "français")
-            {
-                einstellungen.btnReallyHard.Text = "Très difficile: 1-100000";
-            }
-        }
+
     }
 }
